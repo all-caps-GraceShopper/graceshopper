@@ -1,6 +1,8 @@
 const router = require('express').Router()
 const {OrderDetail, Order} = require('../db/index')
 
+// you can get the user by saying `req.user` (slightly shorter than going through the session)
+
 //find your pending cart order through your user id
 //added two helper methors to the Order and OrderDetails models to getPedingOrder for the cart, and to getCartItems also for cart
 

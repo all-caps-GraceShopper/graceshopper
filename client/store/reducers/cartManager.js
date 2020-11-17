@@ -77,6 +77,8 @@ const initialState = {
   orderId: 0
 }
 
+// this reducer is getting a bit large - how can we make it more efficient? Could we split up the add to cart and reduce from cart? Do we need GET_USER or is that stored elsewhere?
+
 export const cartReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TO_CART: {

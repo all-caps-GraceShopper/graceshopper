@@ -13,6 +13,8 @@ router.get('/', async (req, res, next) => {
   }
 })
 
+// double check the async/await logic here. Are we sending a response before everything has updated?
+// warning! async/await has different behaviors depending on which type of loop you use. A forEach loop does not support async/await https://www.freecodecamp.org/news/javascript-async-and-await-in-loops-30ecc5fb3939/
 router.put('/', async (req, res, next) => {
   try {
     const user = req.session.passport.user

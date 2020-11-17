@@ -20,6 +20,8 @@ export class Navbar extends React.Component {
     }
   }
 
+  // is there somewhere else we can handle this logic?
+  // otherwise I suggest you use the second input to useEffect to conditionally run this function only when the isLoggedIn state changes
   useEffect() {
     console.log('in the effect')
 
